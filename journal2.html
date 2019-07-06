@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>个人日志</title>
+
+</head>
+<body>
+    <h1>第二篇日志</h1>
+    <ul>
+        新学习了javascript的内容，记录以下小点：
+        <li>
+            var：所谓变量提升，相当于使用前已经定义了此量位undifined<br>
+            let：块级作用域和c++的变量定义差不多，在使用前必须定义好。
+            在函数中、局部变量中也能和全局分开使用。有暂存死区的特性，
+            这一性质体现的就是先定义好这一点，和c++不同的是在块中也可
+            以定义和全局变量同名的变量，但是不可在定义前使用
+            （如用var，则适应var的特性）。
+        </li>
+        <li>关于生成器generator和yield:一般定义generator如:
+        <pre><code>
+            function *foo(a)
+            {
+            for(let i = 0;i < len;++i)
+              {
+               if(a[i] === some 类型)yield a[i];
+               else{
+                  yield* a[i];//前提是啊a[i]和a的类型一致，如多叉树
+                }
+              }
+            }
+            </code></pre></li>
+        <li>
+            关于boolean类型：&&和||同普通逻辑方式相似（如&&前为true取决于后者）
+
+        </li>
+        <li>
+            number类型：注意有不同的精度，影响===的关系。
+        </li>
+</ul>
+<p><em>2019.7.6</em></p>
+    <hr />
+
+</body>
+
+</html>
+
+<style>
+    html {
+        background-image: url(timgE5OUYG0S.jpg);
+        color: white;
+    }
+</style>
